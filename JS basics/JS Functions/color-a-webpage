@@ -4,12 +4,12 @@
       <title> change a webpage color</title>
       <meta charset="utf-8">
     <style>
-      body {background-color: brown;}
+      body {background-color: red;}
     </style>  
   </head>
   <body>
       <p> To proceed click the button below</p>
-      <button onclick="change('red')">CLICK</button>
+      <button onclick="change('blue')">CLICK</button>
 
      <script>
         function change(color) { document.body.style.backgroundColor=color;
