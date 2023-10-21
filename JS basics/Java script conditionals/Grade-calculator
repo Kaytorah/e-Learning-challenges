@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grade calculator</title>
+    </head>
 
+    <body>
+       
+    </body>
+       <script>
+          var score=prompt("What is your score");
+          if(score >=70){ alert('Your grade is A'); }
+          if(score >=50 && score <=60){ alert ('Your grade is C');}
+          else { if (score <=40) alert('Your score is F');}
+          
+       </script>
+</html>
