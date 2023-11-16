@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+ 
+    <h1>Mad Libs</h1>
+     
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() { 
+           var noun = document.getElementById("noun").value; 
+           var adjective = document.getElementById("adjective").value;
+           var person = document.getElementById("person").value;
+           var storyDiv = document.getElementById("story");
+
+        storyDiv.innerHTML = `A long time ago, <strong> ${noun}</strong> was very <strong> ${adjective}</strong> and on a certain sunday, <br>
+        the villagers decided to give ${noun} a name, and the name was: <strong><em> ${person}</em></strong>.`
+        };
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+  
+ </body>
+</html>
